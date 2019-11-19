@@ -55,8 +55,7 @@ def salva_arquivo(item):
     caso o mesmo
     ja exista
     '''
-    agora = datetime.datetime.now()
-    timestamp = datetime.datetime.timestamp(agora)
+    
     with open('output/abandoned-carts.json', 'a') as fp:
         json.dump(item, fp)
 
